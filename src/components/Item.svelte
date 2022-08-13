@@ -13,7 +13,7 @@
         display: flex;
         gap: $padding;
         flex-direction: row;
-        padding: $padding/2 $padding $padding/2 $padding;
+        padding: calc($padding/2) $padding calc($padding/2) $padding;
     }
 
     action {
@@ -35,5 +35,5 @@
 
 <component>
     <action on:click={() => onAction(item.uuid)}/>
-    <item>{item.text}</item>
+    <item id={item.uuid}>{item.text}</item>
 </component>

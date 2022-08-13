@@ -15,4 +15,4 @@ Part of the software testing bootcamp suite.
   * Re-start Visual Studio Code
 * From the terminal: `npm install`
 * From the terminal: `npm run dev`
-* Open `localhost:5000`
+* Open `localhost:8080`
