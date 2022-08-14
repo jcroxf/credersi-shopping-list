@@ -1,5 +1,6 @@
 <script>
     import {createEventDispatcher} from 'svelte';
+    export let index = null;
     export let item = null;
     
     const dispatch = createEventDispatcher();
@@ -34,6 +35,6 @@
 </style>
 
 <component>
-    <action on:click={() => onAction(item.uuid)}/>
-    <item id={item.uuid}>{item.text}</item>
+    <action id="action-{index+1}"on:click={() => onAction(item.uuid)}/>
+    <item data-uuid={item.uuid} id="item-{index+1}">{item.text}</item>
 </component>

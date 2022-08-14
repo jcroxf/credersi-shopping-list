@@ -15,7 +15,7 @@
 </style>
 
 <component>
-    {#each items as item}
-        <Item on:done {item}/>
+    {#each items as item, index}
+        <Item on:done {index} {item}/>
     {/each}
 </component>
